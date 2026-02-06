@@ -67,3 +67,33 @@ print(h)
 i = np.random((2,2))
 print(i)
 
+### 📊 Data Types (`dtype`) - The Array's DNA
+
+# In NumPy, every array has a **dtype** - meaning all elements must be the same type:
+
+
+# Integer array
+int_arr = np.array([1, 2, 3])
+print(f"Integer Array: {int_arr}, dtype: {int_arr.dtype}")
+
+# Float array
+float_arr = np.array([1.5, 2.5, 3.5])
+print(f"Float Array: {float_arr}, dtype: {float_arr.dtype}")
+
+# Mixed? NumPy will "promote" to the bigger type!
+mixed = np.array([1, 2, 3.5])  # int + float = everything becomes float!
+print(f"Mixed Array: {mixed}, dtype: {mixed.dtype}")
+
+# Force a specific dtype
+forced = np.array([1, 2, 3], dtype=np.float32)
+print(f"Forced Float32: {forced}, dtype: {forced.dtype}")
+
+"""
+**Output:**
+```
+Integer Array: [1 2 3], dtype: int64
+Float Array: [1.5 2.5 3.5], dtype: float64
+Mixed Array: [1.  2.  3.5], dtype: float64    ← See? All became floats!
+Forced Float32: [1. 2. 3.], dtype: float32
+```
+"""
