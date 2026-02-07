@@ -97,3 +97,12 @@ Mixed Array: [1.  2.  3.5], dtype: float64    ← See? All became floats!
 Forced Float32: [1. 2. 3.], dtype: float32
 ```
 """
+
+#2d array with different data type
+j = np.array([[1,2,3],[4,5,6]], dtype=np.float64)
+print(j)
+
+#3d array with different data type
+k = np.array([[[1,2],[3,4]],[[5,6],[7,8]]], dtype=np.int32)
+print(k)
+
