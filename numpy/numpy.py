@@ -103,3 +103,14 @@ print(j)
 k = np.array([[[1,2],[3,4]],[[5,6],[7,8]]], dtype=np.int32)
 print(k)
 
+#array with string data type
+l = np.array(['apple', 'banana', 'cherry'], dtype=np.str_)
+print(l) 
+
+#array with boolean data type
+m = np.array([True, False, True], dtype=np.bool_) 
+print(m)
+
+#array with complex data type
+n = np.array([1+2j, 3+4j], dtype=np.complex128) 
+print(n)
