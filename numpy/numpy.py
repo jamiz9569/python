@@ -114,3 +114,20 @@ print(m)
 #array with complex data type
 n = np.array([1+2j, 3+4j], dtype=np.complex128) 
 print(n)
+
+# mathematical function in array 
+o = np.array([1, 2, 3])
+
+print(np.sin(o))  # sine of each element
+print(np.cos(o))  # cosine of each element
+print(np.exp(o))  # exponential of each element
+print(np.sqrt(o)) # square root of each element
+print(np.sum(o)) # sum of all elements
+print(np.subtract(o, 1)) # subtract 1 from each element
+print(np.multiply(o, 2)) # multiply each element by 2
+print(np.divide(o, 2)) # divide each element by 2
+
+p = np.array([[1, 2], [3, 4]])
+print(np.sum(p, axis=0))  # sum along columns (result: [4, 6] )
+print(np.sum(p, axis=1))  # sum along rows (result: [3, 7] )
+
