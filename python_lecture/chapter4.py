@@ -32,6 +32,7 @@ print(len(colors)) # length of tuple
 # converting list to tuple and vice versa
 fruits_tuple = tuple(fruits) # list to tuple
 print(fruits_tuple)
+
 colors_list = list(colors) # tuple to list
 print(colors_list)
 
@@ -56,6 +57,7 @@ a, b, c = fruits
 print(a)
 print(b)
 print(c)
+
 # unpacking tuple
 x, y, z = colors    
 print(x)
@@ -73,17 +75,21 @@ for color in colors:
 # list comprehension
 squared_numbers = [x**2 for x in range(10)]
 print(squared_numbers)
+
 # tuple comprehension (actually creates a generator)
 squared_numbers_tuple = tuple(x**2 for x in range(10))
 print(squared_numbers_tuple)
+
 # checking membership
 print("apple" in fruits)
 print("red" in colors)
 print("banana" not in fruits)
 print("blue" not in colors)
+
 # copying list
 fruits_copy = fruits.copy()
 print(fruits_copy)
+
 # copying tuple (tuples are immutable, so this is just a reference)
 colors_copy = colors
 print(colors_copy)
@@ -91,6 +97,7 @@ print(colors_copy)
 # clearing list
 fruits.clear()
 print(fruits)
+
 # tuples cannot be cleared as they are immutable
 # del keyword to delete list or tuple
 del fruits_copy
