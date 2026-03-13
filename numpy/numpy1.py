@@ -124,6 +124,7 @@ print(np.sin(o))  # sine of each element
 print(np.cos(o))  # cosine of each element
 print(np.exp(o))  # exponential of each element
 print(np.sqrt(o)) # square root of each element
+
 print(np.sum(o)) # sum of all elements
 print(np.subtract(o, 1)) # subtract 1 from each element
 print(np.multiply(o, 2)) # multiply each element by 2
