@@ -20,6 +20,8 @@ fruits["orange"] = "orange" # add item
 print(fruits)
 fruits.update({"grape": "purple"}) # add item using update()
 print(fruits)
+
+
 #removing items
 del fruits["banana"] # remove item by key
 print(fruits)
@@ -32,6 +34,8 @@ print(fruits)
 print(fruits.keys()) # get all keys
 print(fruits.values()) # get all values
 print(fruits.items()) # get all key-value pairs
+
+
 #looping through dictionary
 for key, value in fruits.items():
     print(f"{key}: {value}")
