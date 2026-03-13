@@ -3,7 +3,9 @@
 # intellipath question  
 
 import numpy as np 
- # question 1 
+
+
+# question 1 
 def solve(dimensions, value):
     return np.full(dimensions, value)
 
