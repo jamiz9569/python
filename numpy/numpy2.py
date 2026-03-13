@@ -34,10 +34,12 @@ print(z) # [5 7 9]
 
 # array manipulation 
 arr = np.array([[1,2,3],[4,5,6]])
+
 print(arr.shape) # (2,3)
 print(arr.reshape(3,2)) # reshape to 3 rows and 2 columns
 print(arr.flatten()) # flatten to 1d array
 print(arr.T) # transpose of the array
+
 np.concatenate((arr, arr), axis=0) # concatenate along rows
 print(np.concatenate((arr, arr), axis=0)) # [[1 2 3]
                                             #  [4 5 6]
@@ -71,7 +73,9 @@ print(arr[0,0]) #1
 print(arr[1,2]) #6
 print(arr[0,:]) #[1 2 3]
 print(arr[:,1]) #[2 5]
+
 print(arr[0:2,0:2]) # [[1 2]
                     #  [4 5]]
+                    
 print(arr[::2,::2]) # [[1 3]]
 
