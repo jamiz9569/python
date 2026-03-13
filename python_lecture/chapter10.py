@@ -55,6 +55,7 @@ class Cat(Animal):
 
     def make_sound(self):  # Overriding method
         print(f"{self.name} says Meow!")
+        
 # Creating an object of the derived class
 my_cat = Cat("Whiskers", 2)
 print(f"My cat's name is {my_cat.name}, she is a {my_cat.species} and is {my_cat.age} years old.")
