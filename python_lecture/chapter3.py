@@ -9,8 +9,8 @@ print(name.lower())
 
 nameshort = name[0:6] # slicing 
 namelong = name[1:5:2] # slicing with step
-print(namelong)
-print(nameshort)
+print("namelong : ",namelong)  #ai 
+print("nameshort : ",nameshort) #jamiz 
 
 # concatenation
 first_name = "jamiz"
@@ -24,7 +24,9 @@ print(name.startswith("j")) # check if string starts with j
 print(name.find("q")) # find index of character q
 print(name.replace("jamiz", "john")) # replace jamiz with john
 print(name.split(" ")) # split string by space
+
 print(",".join(["jamiz", "qamar"])) # join list of strings with comma
+
 print(len(name)) # length of string
 print(name.count("a")) # count occurrences of a
 print(name.index("q")) # index of character q
