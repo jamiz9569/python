@@ -50,10 +50,4 @@
 
 ---
 
-# Projects
 
-### Mega Project 1
-Jarvis
-
-### Mega Project 2
-Auto Reply AI Chatbot
