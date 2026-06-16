@@ -9,11 +9,17 @@ f = "53.6" # string type but contains numeric value
 
 """
 arithmatic operator = + , - , * , / , % , // , **= power 
+
 comparison operator = (== , != , > , < , >= , <=) # return boolean value
+
 logical operator = and , or , not 
+
 assignment operator = = , += , -= , *= , /=
+
 bitwise operator = & , | , ^ , ~ , << , >> , >>=
+
 membership operator = in , not in
+
 identity operator = is , is not
 
 """
@@ -35,6 +41,8 @@ name = input("Enter your name: ") # by default input function takes input as str
 age = int(input("Enter your age: ")) # type casting input to int
 print("Hello " + name + ", you are " + str(age) + " years old.")
 print(f"Hello {name}, you are {age} years old.") # f-string for formatted output
+
+
 
 
 

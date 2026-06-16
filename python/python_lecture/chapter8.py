@@ -4,6 +4,7 @@
 A function is a group of statements performing a specific task.
 When a program gets bigger in size and its complexity grows, it gets difficult for a
 program to keep track on which piece of code is doing what!
+
 """
 # Defining a function
 def greet():
@@ -35,6 +36,7 @@ greet_user("Alice")  # Uses provided argument
 """
 Recursion is a programming technique where a function calls itself in order to solve a problem.
 It is commonly used for problems that can be broken down into smaller, similar subproblems.
+
 """
 # Example of a recursive function to calculate factorial
 def factorial(n):

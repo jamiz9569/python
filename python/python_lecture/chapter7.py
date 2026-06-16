@@ -1,4 +1,6 @@
 #Loops in Python
+
+
 # For Loop Example
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
@@ -49,22 +51,28 @@ for name, age in zip(names, ages): #zip combines two lists
 # List Comprehension with Loops
 squares = [x**2 for x in range(10)]
 print("Squares:", squares)
+
 # Dictionary Comprehension with Loops
 cubes = {x: x**3 for x in range(5)}
 print("Cubes:", cubes)
+
 # Set Comprehension with Loops
 unique_squares = {x**2 for x in range(-3, 4)}
 print("Unique Squares:", unique_squares)
+
 # Generator Expression with Loops
 even_numbers = (x for x in range(10) if x % 2 == 0)
 print("Even Numbers:", list(even_numbers))
+
 # Looping through a string
 for char in "Hello":
     print(f"Character: {char}")
+
 # Looping through a dictionary
 person = {"name": "Alice", "age": 30, "city": "New York"}
 for key, value in person.items():
     print(f"{key}: {value}")
+
 # Using else with while loop
 count = 0
 while count < 3:
@@ -72,12 +80,14 @@ while count < 3:
     count += 1
 else:
     print("While loop completed without break")
+
 # Using pass in loops
 for i in range(5):
     if i % 2 == 0:
         pass  # Do nothing for even numbers
     else:
         print(f"Odd number: {i}")
+        
 
 # Using nested list comprehension
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]

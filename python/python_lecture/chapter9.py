@@ -1,4 +1,5 @@
 # file inpur and output
+
 """
 The random-access memory is volatile, and all its contents are lost once a program
 terminates. In order to persist the data forever, we use files.
@@ -9,6 +10,7 @@ content from it and writing content to it
 There are 2 types of files:
 1. Text files (.txt, .c, etc)
 2. Binary files (.jpg, .dat, etc)
+
 Python has a lot of functions for reading, updating, and deleting files.
 
 """
@@ -27,6 +29,7 @@ print(data) # print the content of the file
 f.readline()  # read one line from the file
 f.readlines()  # read all lines and return as a list of strings
 f.close()  # close the file after use
+
 """
 MODES OF OPENING A FILE
 r – open for reading
