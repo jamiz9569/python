@@ -25,3 +25,4 @@ t1.join()
 t2.join()
 print("Done!")
 
+# Output will interleave numbers and letters, demonstrating multi-threading.
