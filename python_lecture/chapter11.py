@@ -164,3 +164,113 @@ lambda arguments:expressions
 square = lambda x:x*x
 square(6) # returns 36
 sum = lambda a,b,c:a+b+c
+
+"""
+
+Map applies a function to all the items in an input_list.
+Syntax.
+map(function, input_list)
+# the function can be lambda function
+
+
+
+Filter creates a list of items for which the function returns true.
+list(filter(function))
+# the function can be lambda function
+
+
+Reduce applies a rolling computation to sequential pair of elements.
+from functools import reduce
+val=reduce (function, list1)
+# the function can be lambda function
+
+
+"""
+
+
+"""
+
+import os
+import sys
+
+# os module provides operating system dependent functionality
+# such as creating files/directories, working with paths,
+# and interacting with the file system.
+
+# Current working directory
+print("Current directory:", os.getcwd())
+
+# List files and folders in the current directory
+print("Files and folders:", os.listdir())
+
+# Create a new directory
+os.mkdir("data")
+
+# Rename a file or directory
+os.rename("data", "data_backup")
+
+# Check if a file or directory exists
+print("data_backup exists:", os.path.exists("data_backup"))
+
+# Join paths correctly (works on Windows, Linux, macOS)
+path = os.path.join("data_backup", "file.txt")
+print("Joined path:", path)
+
+# Remove a file
+# os.remove("example.txt")
+
+# Remove an empty directory
+# os.rmdir("data_backup")
+
+"""
+
+import sys
+
+# Python version
+print(sys.version)
+
+# Command-line arguments
+print(sys.argv)
+
+# Exit the program
+sys.exit()
+
+# Platform information
+print(sys.platform)
+
+"""
+One important note: os.rmdir() only removes empty directories. 
+If a directory contains files, it raises an error.
+Humans, in their infinite optimism, keep trying it anyway. 
+To remove a non-empty directory, you'd typically use the shutil module:
+
+import shutil
+
+shutil.rmtree("data_backup")
+
+This deletes the directory and everything inside it, so use it carefully.
+
+"""
+
+"""
+import os
+import pandas as pd
+
+# Check current directory
+print(os.getcwd())
+
+# Move to another folder
+os.chdir(r"C:\Users\Jamiz\Downloads")
+
+# Verify
+print(os.getcwd())
+
+# Show files
+print(os.listdir())
+
+# Read CSV
+df = pd.read_csv("students.csv")
+
+print(df.head())
+
+"""

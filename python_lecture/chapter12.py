@@ -169,3 +169,27 @@ except ZeroDivisionError:
 else:
     print("Division successful:", num)
 
+# ============================================================
+# 9. TRY WITH FINALLY
+# ============================================================
+
+# Python offers a ‘finally’ clause which ensures execution of a piece of code inspective of
+# the exception.
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")  
+finally:
+    print("This will always execute, regardless of an exception.")
+
+"""
+IF __NAME__== ‘__MAIN__’ IN PYTHON
+
+‘__name__’ evaluates to the name of the module in python from where the program is
+ran.
+
+If the module is being run directly from the command line, the ‘ __name__’ is set to
+string “__main__”. Thus, this behaviour is used to check whether the module is run
+directly or imported to another file
+
+"""

@@ -8,9 +8,12 @@ print(name.upper()) # convert to uppercase
 print(name.lower()) # convert to lowercase
 
 nameshort = name[0:6] # slicing 
+# name[index start : index end ]  first index is inclusive and last index is exclusive
 namelong = name[1:5:2] # slicing with step
+nameslice = name[:6:2] # slicing with step
 print("namelong : ",namelong)  #ai 
 print("nameshort : ",nameshort) #jamiz 
+print("nameslice : ",nameslice) #ai 
 
 # concatenation
 first_name = "jamiz"
@@ -58,3 +61,16 @@ print (name)
 
 name = "   jamiz \" qamar\"  " # string with escape character
 print (name)
+
+"""
+\n -- newline
+
+\t -- tab
+
+\' -- single quote
+
+\" -- double quote
+
+\\ -- backslash
+
+"""
