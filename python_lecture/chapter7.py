@@ -45,8 +45,8 @@ for index, color in enumerate(colors): #enumerate returns both index and value
 #using zip() in loops
 names = ["Alice", "Bob", "Charlie"]
 ages = [25, 30, 35]
-for name, age in zip(names, ages): #zip combines two lists
-    print(f"Name: {name}, Age: {age}")
+for name, age in zip(names, ages): # zip() is used to loop over two or more sequences together
+    print(f"Name: {name}, Age: {age}") # zip() stops after the shorter sequence ends
 
 # List Comprehension with Loops
 squares = [x**2 for x in range(10)]
